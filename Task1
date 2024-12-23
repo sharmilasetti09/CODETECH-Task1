@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personal Portfolio Website</title>
+    <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <h1>PERSONAL PORTFOLIO WEBSITE</h1> <!-- Updated heading -->
+            <nav>
+                <ul>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#projects">Projects</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <section id="about">
+        <div class="container">
+            <h2>About Me</h2>
+            <p>Welcome to my portfolio! I am a student at the Institute of Aeronautical Engineering studying Electronics and Communication Engineering. I specialize in Python programming, web development, and UI/UX design.</p>
+        </div>
+    </section>
+
+    <section id="projects">
+        <div class="container">
+            <h2>My Projects</h2>
+            <div class="project-list">
+                <div class="project">
+                    <h3>IoT-Based Intelligent Parking System</h3>
+                    <p><strong>Description:</strong> This project aims to provide a smart parking solution using IoT sensors. It enables real-time monitoring of available parking spaces and automatic billing based on the duration of parking.</p>
+                    <p><strong>Technologies Used:</strong> IoT, Arduino, Python, MongoDB, JavaScript</p>
+                    <p><strong>Role:</strong> Lead Developer</p>
+                    <p><strong>Outcome:</strong> Successfully developed a working prototype that automates parking management in real-time.</p>
+                </div>
+                <div class="project">
+                    <h3>Website Portfolio</h3>
+                    <p><strong>Description:</strong> A simple personal portfolio website that showcases my skills and projects. It is mobile-responsive, with sections for an introduction, portfolio, and contact form.</p>
+                    <p><strong>Technologies Used:</strong> HTML, CSS, JavaScript, Node.js</p>
+                    <p><strong>Role:</strong> Full Stack Developer</p>
+                    <p><strong>Outcome:</strong> Designed and developed a visually appealing portfolio with a backend to handle contact form submissions.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="contact">
+        <div class="container">
+            <h2>Contact</h2>
+            <form action="backend" method="POST">
+                <input type="text" name="name" placeholder="Your Name" required>
+                <input type="email" name="email" placeholder="Your Email" required>
+                <textarea name="message" placeholder="Your Message" required></textarea>
+                <button type="submit">Send Message</button>
+            </form>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2024 Your Name. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="assets/js/script.js"></script>
+</body>
+</html>
+/* Basic Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background: linear-gradient(to right, #6a11cb, #2575fc); /* Linear gradient background */
+    color: white;
+    padding: 0;
+    margin: 0;
+}
+
+header {
+    background-color: rgba(0, 0, 0, 0.5); /* Transparent background */
+    color: white;
+    padding: 20px;
+}
+
+header .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header h1 {
+    font-size: 1.8rem;
+}
+
+header nav ul {
+    list-style-type: none;
+}
+
+header nav ul li {
+    display: inline;
+    margin-left: 20px;
+}
+
+header nav ul li a {
+    color: white;
+    text-decoration: none;
+}
+
+section {
+    padding: 40px 0;
+    background-color: rgba(255, 255, 255, 0.1); /* Light transparent background for sections */
+    margin: 20px 0;
+}
+
+.container {
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+h2 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+}
+
+.project-list {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+}
+
+.project {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    color: #333;
+}
+
+.project h3 {
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+}
+
+.project p {
+    font-size: 1rem;
+    margin-bottom: 15px;
+}
+
+form input, form textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+}
+
+form button {
+    background-color: #333;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+footer {
+    background-color: rgba(0, 0, 0, 0.5); /* Transparent background */
+    color: white;
+    padding: 10px;
+    text-align: center;
+}
+
+/* Mobile Responsiveness */
+@media (max-width: 768px) {
+    header .container {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .project-list {
+        grid-template-columns: 1fr;
+    }
+}
+document.addEventListener('DOMContentLoaded', () => {
+    // You can add interactivity here, like form validation, smooth scrolling, etc.
+});
